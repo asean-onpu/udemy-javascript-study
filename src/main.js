@@ -1,24 +1,55 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+/**
+ *  const,letなどの変数宣言
+ */
+// var val1 = "var変数";
+// console.log(val1);
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// // var変数は上書きが可能
+// val1 = "上書き";
+// console.log(val1);
 
-setupCounter(document.querySelector('#counter'))
+// // var変数は再宣言可能
+// var val1 = "再宣言";
+// console.log(val1);
+
+// let val2 = "let変数";
+// console.log(val2);
+
+// // letは上書き可能
+// val2 = "上書き";
+// console.log(val2);
+
+// // letは再宣言不可能
+// let val2 = "再宣言";
+// console.log(val2);
+
+// const val3 = "const変数";
+// console.log(val3);
+
+// // // constは上書き不可能
+// // val3 = "上書き";
+// // console.log(val3);
+
+// // constは再宣言不可能
+// let val3 = "再宣言";
+// console.log(val3);
+
+// // constで定義したオブジェクトはプロパティの変更が可能
+// const val4 = {
+//   name: "じゃけぇ",
+//   age: 31
+// };
+// console.log(val4)
+
+// val4.name = "jak";
+// val4.address = "Hiroshima"
+// console.log(val4)
+
+// constで定義した配列はプロパティの変更が可能
+const val5 = ["dog", "cat"];
+val5[0] = "bird";
+val5.push("monkey");
+console.log(val5);
+
+
+
